@@ -1,0 +1,31 @@
+.warranty {
+  &__row {
+    padding-block: 22px 80px;
+    text-align: center;
+  }
+
+  &__description {
+    font: {
+      weight: 500;
+      size: 18px;
+    }
+    padding: 34px 0;
+    line-height: 130%;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__pic {
+    width: 100%;
+  }
+
+  &__text {
+    white-space: pre-line;
+    font: {
+      weight: 600;
+      size: 16px;
+    }
+  }
+}

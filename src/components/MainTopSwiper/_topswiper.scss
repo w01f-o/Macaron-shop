@@ -1,0 +1,36 @@
+.topswiper {
+  background: $swiper-top-bg;
+  font-size: 18px;
+
+  &__inner {
+    padding-block: 5px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5000;
+  }
+
+  &__btn-prev {
+    left: 0;
+  }
+
+  &__btn-next {
+    right: 0;
+  }
+}

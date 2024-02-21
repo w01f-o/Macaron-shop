@@ -1,0 +1,125 @@
+.promo {
+  position: relative;
+
+  &__row {
+    padding-block: 39px;
+  }
+
+  &__blur-item {
+    position: absolute;
+    filter: blur(100px);
+    z-index: -1;
+  }
+
+  .blur-item1 {
+    background: rgba(255, 252, 189, 0.45);
+    width: 264px;
+    height: 264px;
+    right: 3px;
+    top: 172px;
+  }
+
+  .blur-item2 {
+    background: rgba(255, 217, 196, 0.61);
+    width: 150px;
+    height: 150px;
+    right: 121px;
+    top: 321px;
+  }
+
+  .blur-item3 {
+    background: rgba(152, 224, 194, 0.38);
+    width: 231px;
+    height: 231px;
+    right: 121px;
+    top: 65px;
+  }
+
+  .blur-item4 {
+    background: rgba(200, 222, 255, 0.37);
+    width: 479.37px;
+    height: 479.37px;
+    top: 39px;
+    left: 428px;
+  }
+
+  .blur-item5 {
+    background: rgba(111, 217, 251, 0.6);
+    width: 268.36px;
+    height: 264.27px;
+    top: 39px;
+    left: 391px;
+  }
+
+  .blur-item6 {
+    background: rgba(255, 168, 241, 0.37);
+    width: 276.56px;
+    height: 276.56px;
+    left: 148px;
+    top: 137px;
+  }
+
+  .blur-item7 {
+    background: rgba(194, 226, 255, 0.36);
+    width: 282.7px;
+    height: 282.7px;
+    left: 309px;
+    top: 215px;
+  }
+
+  &__pic {
+    width: 115%;
+    transform: translateX(-100px);
+  }
+
+  text-align: center;
+
+  .promo__logo {
+    line-height: 27px;
+    font-weight: 600;
+    &-name {
+      font: {
+        size: 22px;
+      }
+    }
+    &-year {
+      position: relative;
+      display: inline-block;
+      font: {
+        size: 16px;
+      }
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        background: #000;
+        height: 2px;
+        width: 29px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      $year-left-right: -42px;
+
+      &::after {
+        left: $year-left-right;
+      }
+
+      &::before {
+        right: $year-left-right;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 42px;
+    padding-block: 24px 13px;
+  }
+
+  &__description {
+    font: {
+      size: 18px;
+      weight: 400;
+    }
+  }
+}

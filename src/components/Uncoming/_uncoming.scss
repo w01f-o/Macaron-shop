@@ -1,0 +1,44 @@
+.uncoming {
+  &__row {
+    position: relative;
+    margin-block: 70px 108px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 80%;
+      bottom: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: -1;
+      border-bottom: 3px dotted #d2d2d2;
+    }
+  }
+
+  #uncoming__item1 {
+    //height: 110%;
+    //transform: translateY(-10%);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    position: relative;
+
+    #uncoming__svg1 {
+      position: absolute;
+      top: -45px;
+      right: 30px;
+    }
+
+    &-text {
+      font: {
+        size: 14px;
+        weight: 600;
+      }
+    }
+  }
+}

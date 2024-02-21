@@ -1,0 +1,32 @@
+.contacts {
+  &__row {
+    padding-block: 24px 82px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title {
+    padding-top: 23px;
+    font-size: 42px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &-text {
+      line-height: 130%;
+    }
+  }
+}

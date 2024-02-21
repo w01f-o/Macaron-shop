@@ -1,0 +1,12 @@
+.links {
+  text-align: center;
+  padding-top: 41px;
+
+  .link {
+    color: rgb(41, 41, 41);
+
+    &.active {
+      color: #4e9dd3;
+    }
+  }
+}

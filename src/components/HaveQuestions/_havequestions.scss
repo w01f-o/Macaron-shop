@@ -1,0 +1,80 @@
+@keyframes messageAnim {
+  0% {
+    transform: translate(0) rotate(0);
+  }
+  50% {
+    transform: translate(50px, -50px) rotate(15deg);
+  }
+  100% {
+    transform: translate(0) rotate(0);
+  }
+}
+
+@keyframes questionsAnim {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 20px;
+  }
+}
+
+.questions {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  animation: questionsAnim 1s 1;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.15));
+
+  &.disable {
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  &__message {
+    position: relative;
+    width: 204px;
+    height: 70px;
+    background: $white-color-bg;
+    border-radius: 15px;
+    padding: 16px 30px;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    animation: messageAnim 2s 1;
+    //box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      left: 30%;
+      z-index: -1;
+      border: 20px solid transparent;
+      border-top: 20px solid $white-color-bg;
+      border-right: 20px solid $white-color-bg;
+      //filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.15));
+    }
+  }
+
+  .message {
+    &__title {
+      font: {
+        size: 18px;
+        weight: 600;
+      }
+    }
+
+    &__text {
+      font: {
+        size: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.primary-button {
+  border: 2px solid $accent-color;
+  background: $accent-color;
+  border-radius: 3px;
+  color: $white-color-bg;
+  position: relative;
+  z-index: 1;
+  padding: 11px 16px;
+
+  font: {
+    size: 14px;
+    weight: 500;
+  }
+  &:hover {
+    background: none;
+    transition: 0.3s;
+    color: $accent-color;
+  }
+}

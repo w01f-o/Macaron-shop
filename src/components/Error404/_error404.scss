@@ -1,0 +1,38 @@
+.error404 {
+  &__row {
+    text-align: center;
+    align-items: center;
+    padding-block: 109px;
+  }
+
+  &__text {
+    font: {
+      size: 20px;
+      weight: 500;
+    }
+  }
+
+  &__error-code {
+    font: {
+      size: 350px;
+      weight: 600;
+    }
+    color: #826a5c;
+    position: relative;
+  }
+
+  &__image {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__pic {
+    width: 100%;
+  }
+
+  &__btn {
+    padding: 11px 94px;
+  }
+}
